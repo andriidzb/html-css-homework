@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms HTML</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+		fieldset {
+		border: 1px solid grey;
+		padding: 20px;
+		margin-bottom: 20px;
+		}
+		label {
+		width: 150px;
+		display: inline-block;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="main">
+				<div id="container">
+					<div id="content" role="main">
+						<header>
+							<h1>Order Form</h1>
+						</header>
+						<form>
+							<fieldset>
+								<legend>General Info</legend>
+								<label for="email">
+								Email</label>
+								<input type="email" placeholder="your@email.com" required>
+								<br />
+								<label for="login">
+								Login</label>
+								<input type="text" placeholder="Login" pattern="[A-Za-z1-3]{1,}" required>
+								<br />
+								<label for="password">
+								Password</label>
+								<input type="password" placeholder="Password" required>
+							</fieldset>
+							<fieldset>
+								<legend>User Info</legend>
+								<label for="firstName">
+								First Name</label>
+								<input type="text" placeholder="John" pattern="[A-Za-z]{1,}" required>
+								<br />
+								<label for="secondName">
+								Second Name</label>
+								<input type="text" placeholder="Doe" pattern="[A-Za-z]{1,}" required>
+								<br />
+								<label>Gender</label>
+								Male<input type="radio" name="gender" value="Male" checked>
+								Female<input type="radio" name="gender" value="Female">
+								<br />
+								<label>Age</label>
+								<input type="number" placeholder="32" required>
+								<br />
+								<label>About me</label>
+								<textarea name="aboutUser" cols="20" rows="6" disabled>
+								</textarea>
+							</fieldset>
+							<fieldset>
+								<legend>Order Info</legend>
+								<label>Product</label>
+								<select name="select">
+									<option value="iPhone">iPhone</option>
+									<option value="Samsung">Samsung</option>
+									<option value="Xiaomi">Xiaomi</option>
+									<option value="Nokia 1100">Nokia 1100</option>
+								</select>
+								<br />
+								<label>Front Color</label>
+								Black<input type="radio" name="color" value="Black" checked>
+								Pink<input type="radio" name="color" value="Pink">
+								Gold<input type="radio" name="color" value="Gold">
+								<br />
+								<label>Back-side color</label>
+								<input type="color">
+								<br />
+								<label>Amount</label>
+								<input type="number" value="5" readonly>
+								<br />
+								<label>Delivery Date</label>
+								<input type="date" name="daliveryDate">
+							</fieldset>
+								<input type="reset" name="Submit2" value="Reset">
+								<input type="submit" name="Submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
